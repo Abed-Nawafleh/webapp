@@ -7,6 +7,7 @@ const router = express.Router();
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname+'/website/index.html'));
+    console.log(req.socket.remoteAddress|| null);
 });
 
 app.get('/store',function(req,res){

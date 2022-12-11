@@ -14,8 +14,10 @@ app.get('/store',function(req,res){
   });
 
 app.get('/img/:img',(req,res)=> {
-    console.log(req.params.img);
     res.sendFile(path.join(__dirname+'/website/img/'+req.params.img));
+})
+app.get('/:fileDir',(req,res) => {
+    res.sendFile(path.join(__dirname+'/website/'+ req.params.fileDir));
 })
 
 const port = process.env.PORT || 3000;

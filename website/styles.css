@@ -2,12 +2,42 @@ body, html {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .hero-image {
   background-color: #cccccc;
-background-position: center;
-height: 600px;
-background-repeat: no-repeat;
-background-size: cover;
+  background-position: center;
+  height: 28rem;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media only screen and (max-width: 1200px) {
+  .hero-image{
+    height: 25rem;
+  }
+}
+body{
+   background: 
+    url(img/texture2.jpg),
+    url(img/color1.jpg);
+    background-blend-mode: multiply;
+
+  background-size: 30rem;
+  background-position-y: 5px;
+}
+.header{
+    -webkit-mask: url(img/texture1border1.png);
+    -webkit-mask-size: 30rem;
+    -webkit-mask-position-y: bottom;
 }
 
+#Content{
+  height:10000px ;
+}
 
+.arrow{
+  font-size: 50px;
+}
+#footer{
+  height: 1000px;
+}
